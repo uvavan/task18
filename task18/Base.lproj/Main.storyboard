@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,20 +11,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="task18" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="v7r-9k-cXe">
-                                <rect key="frame" x="10" y="30" width="355" height="547.5"/>
+                                <rect key="frame" x="10" y="30" width="580" height="510.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8n-Sq-5ze">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="182.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="580" height="170"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7wf-VB-wWV">
-                                                <rect key="frame" x="0.0" y="0.0" width="355" height="182.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="580" height="170"/>
                                             </imageView>
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Prn-rS-7ja">
-                                                <rect key="frame" x="159" y="73" width="37" height="37"/>
+                                                <rect key="frame" x="271.5" y="67.5" width="37" height="37"/>
                                             </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -41,13 +38,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scU-8j-jFH">
-                                        <rect key="frame" x="0.0" y="182.5" width="355" height="182.5"/>
+                                        <rect key="frame" x="0.0" y="170" width="580" height="170.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pk9-hL-nHk">
-                                                <rect key="frame" x="0.0" y="0.0" width="355" height="182"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="580" height="170"/>
                                             </imageView>
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0KM-jn-R7I">
-                                                <rect key="frame" x="159.5" y="72.5" width="37" height="37"/>
+                                                <rect key="frame" x="272" y="66.5" width="37" height="37"/>
                                             </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,13 +58,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJN-Xg-ilL">
-                                        <rect key="frame" x="0.0" y="365" width="355" height="182.5"/>
+                                        <rect key="frame" x="0.0" y="340.5" width="580" height="170"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oCb-Xx-7zg">
-                                                <rect key="frame" x="0.0" y="0.0" width="355" height="182.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="580" height="170"/>
                                             </imageView>
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5G2-zF-zkf">
-                                                <rect key="frame" x="159.5" y="73" width="37" height="37"/>
+                                                <rect key="frame" x="272" y="66.5" width="37" height="37"/>
                                             </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -84,18 +81,18 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51b-8X-jT3">
-                                <rect key="frame" x="62" y="587" width="250" height="70"/>
-                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="225" y="550" width="150" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="6Ej-k0-BPP"/>
-                                    <constraint firstAttribute="height" constant="70" id="p4k-Z0-Tbo"/>
+                                    <constraint firstAttribute="width" constant="150" id="6Ej-k0-BPP"/>
+                                    <constraint firstAttribute="height" constant="40" id="p4k-Z0-Tbo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Refresh">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="ButtonRefreshPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3n1-Xc-lQQ"/>
+                                    <action selector="buttonRefreshPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3n1-Xc-lQQ"/>
                                 </connections>
                             </button>
                         </subviews>

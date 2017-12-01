@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet private weak var ibImageLoadActivityThird: UIActivityIndicatorView!
     @IBOutlet private weak var ibStackViewImage: UIStackView!
     private var imageIndex = 0
-    private let FirstImageUrl = ["http://sf.co.ua/16/09/wallpaper-42d88.jpg", "http://sf.co.ua/16/06/wallpaper-1c5bd.jpg", "http://sf.co.ua/16/08/wallpaper-16002.jpg", "http://sf.co.ua/16/06/wallpaper-4f28.jpg"]
-    private let SecondImageUrl = ["https://www.nasa.gov/sites/default/files/thumbnails/image/15-066.png", "http://gde-fon.com/download/space_dark_universe/36664/1920x1200", "http://co13.nevseoboi.com.ua/17/16427/1384034809-3097609-nevseoboi.com.ua.jpg", "http://co13.nevseoboi.com.ua/17/16427/1384034810-3097589-nevseoboi.com.ua.jpg"]
-    private let ThirdImageUrl = ["http://i.artfile.ru/3500x2015_861945_[www.ArtFile.ru].jpg", "http://www.rabstol.net/uploads/gallery/main/183/rabstol_net_orchids_05.jpg", "https://wallpaperscraft.ru/image/orhideya_cvetok_vetka_ekzotika_55983_602x339.jpg", "http://peterbald-cat.ru/oboi/1/rozy_orhidei_cvety_buket_chernyy_fon_1920x1180.jpg"]
+    private let firstImageUrl = ["http://sf.co.ua/16/09/wallpaper-42d88.jpg", "http://sf.co.ua/16/06/wallpaper-1c5bd.jpg", "http://sf.co.ua/16/08/wallpaper-16002.jpg", "http://sf.co.ua/16/06/wallpaper-4f28.jpg"]
+    private let secondImageUrl = ["https://www.nasa.gov/sites/default/files/thumbnails/image/15-066.png", "http://gde-fon.com/download/space_dark_universe/36664/1920x1200", "http://co13.nevseoboi.com.ua/17/16427/1384034809-3097609-nevseoboi.com.ua.jpg", "http://co13.nevseoboi.com.ua/17/16427/1384034810-3097589-nevseoboi.com.ua.jpg"]
+    private let thirdImageUrl = ["http://i.artfile.ru/3500x2015_861945_[www.ArtFile.ru].jpg", "http://www.rabstol.net/uploads/gallery/main/183/rabstol_net_orchids_05.jpg", "https://wallpaperscraft.ru/image/orhideya_cvetok_vetka_ekzotika_55983_602x339.jpg", "http://peterbald-cat.ru/oboi/1/rozy_orhidei_cvety_buket_chernyy_fon_1920x1180.jpg"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,15 +41,15 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction private func ButtonRefreshPress(_ sender: Any) {
-        imageIndex = (imageIndex + 1) % FirstImageUrl.count
+    @IBAction private func buttonRefreshPress(_ sender: Any) {
+        imageIndex = (imageIndex + 1) % firstImageUrl.count
         refreshImage(by: imageIndex)
     }
     
     private func refreshImage(by index: Int) {
-        loadViewImage(by: index, loadUrl: FirstImageUrl, viewImage: ibImageViewFirst, loadActivity: ibImageLoadActivityFirst)
-        loadViewImage(by: index, loadUrl: SecondImageUrl, viewImage: ibImageViewSecond, loadActivity: ibImageLoadActivitySecond)
-        loadViewImage(by: index, loadUrl: ThirdImageUrl, viewImage: ibImageViewThird, loadActivity: ibImageLoadActivityThird)
+        loadViewImage(by: index, loadUrl: firstImageUrl, viewImage: ibImageViewFirst, loadActivity: ibImageLoadActivityFirst)
+        loadViewImage(by: index, loadUrl: secondImageUrl, viewImage: ibImageViewSecond, loadActivity: ibImageLoadActivitySecond)
+        loadViewImage(by: index, loadUrl: thirdImageUrl, viewImage: ibImageViewThird, loadActivity: ibImageLoadActivityThird)
     }
     
     private func stopAnimatingIndicator(of sender: UIActivityIndicatorView) {
